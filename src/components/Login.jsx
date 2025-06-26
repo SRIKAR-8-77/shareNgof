@@ -23,14 +23,15 @@ const Login = () => {
         body: JSON.stringify({ email, password }),
       });
 
-      const result = await response.json(); // Parse JSON once
+       // Parse JSON once
 
       if (!response.ok) {
-        // Show backend error message if any
-        alert(result.message || "Login failed");
+         const errorText = await response.text(); // fallback if response isn't JSON
+        alert(errorText || "Login failed");
         return;
       }
 
+      const result = await response.json();
       // On success, backend sends { message, user }
       login(result.user); // Save user data in context/localStorage
 
