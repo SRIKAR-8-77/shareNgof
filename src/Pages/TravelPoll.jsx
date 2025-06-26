@@ -17,7 +17,7 @@ const TravelPollsPage = () => {
 
   const fetchPolls = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/travel-polls", {
+      const res = await axios.get("http://sharengob.onrender.com/api/travel-polls", {
         withCredentials: true,
       });
       setPolls(res.data);
@@ -38,7 +38,7 @@ const TravelPollsPage = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/travel-polls",
+          "http://sharengob.onrender.com/api/travel-polls",
           newPoll,
           {
             headers: {
@@ -63,7 +63,7 @@ const TravelPollsPage = () => {
   const handleVote = async (id) => {
     try {
       await axios.put(
-        `http://localhost:8080/api/travel-polls/${id}/vote`,
+        `http://sharengob.onrender.com/api/travel-polls/${id}/vote`,
         {},
         {
           withCredentials: true,

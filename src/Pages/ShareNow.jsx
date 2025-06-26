@@ -17,7 +17,7 @@ const ShareNowPage = () => {
   
    const fetchRides = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/rides");
+      const response = await fetch("http://sharengob.onrender.com/api/rides");
       const data = await response.json();
       setRides(data);
     } catch (error) {
@@ -56,7 +56,7 @@ const ShareNowPage = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/rides", {
+      const response = await fetch("http://sharengob.onrender.com/api/rides", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

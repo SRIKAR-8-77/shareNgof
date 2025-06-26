@@ -30,7 +30,7 @@ const ContactUs = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/api/contact', {
+      const response = await fetch('http://sharengob.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

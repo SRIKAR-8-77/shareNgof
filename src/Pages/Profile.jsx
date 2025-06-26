@@ -16,25 +16,25 @@ const Profile = () => {
   useEffect(() => {
     if (!currentUser?.email) return;
 
-    axios.get(`http://localhost:8080/api/profile/${currentUser.email}`)
+    axios.get(`http://sharengob.onrender.com/api/profile/${currentUser.email}`)
       .then(res => {
         setBio(res.data.bio);
         setProfileImageUrl(res.data.imageUrl);
       })
       .catch(err => console.error(err));
 
-    axios.get(`http://localhost:8080/api/rides/user/${currentUser.email}`)
+    axios.get(`http://sharengob.onrender.com/api/rides/user/${currentUser.email}`)
       .then(res => setRides(res.data))
       .catch(err => console.error(err));
 
-    axios.get(`http://localhost:8080/api/rentals/user/${currentUser.email}`)
+    axios.get(`http://sharengob.onrender.com/api/rentals/user/${currentUser.email}`)
       .then(response => {
       console.log(response.data);  // ✅ Confirm you see your rental data
       setRentals(response.data);
     })
     .catch(err => console.error(err));
 
-    axios.get(`http://localhost:8080/api/travel-polls/user/${currentUser.email}`)
+    axios.get(`http://sharengob.onrender.com/api/travel-polls/user/${currentUser.email}`)
       .then(res => setPolls(res.data))
       .catch(err => console.error(err));
   }, [currentUser.email]);
@@ -46,7 +46,7 @@ const Profile = () => {
     const formData = new FormData();
     formData.append("file", file);
 
-    axios.post(`http://localhost:8080/api/profile/image/${currentUser.email}`, formData)
+    axios.post(`http://sharengob.onrender.com/api/profile/image/${currentUser.email}`, formData)
       .then(() => {
         setProfileImageUrl(URL.createObjectURL(file));
       })

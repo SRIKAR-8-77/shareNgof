@@ -80,7 +80,7 @@ const RentCarPage = () =>{
     };
 
     try {
-      const response = await axios.post("http://localhost:8080/api/rentals", bookingDetails);
+      const response = await axios.post("http://sharengob.onrender.com/api/rentals", bookingDetails);
       alert("Booking submitted successfully!");
       console.log("Server response:", response.data);
 
