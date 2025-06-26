@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
   e.preventDefault();
   try {
-    const response = await fetch("http://sharengob.onrender.com/api/auth/register", {
+    const response = await fetch("https://sharengob.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

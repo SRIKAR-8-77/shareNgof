@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://sharengob.onrender.com/api/auth/login", {
+      const response = await fetch("https://sharengob.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
