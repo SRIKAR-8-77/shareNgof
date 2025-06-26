@@ -12,15 +12,15 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import ServicesSection from "./components/ServicesSection.jsx";
 import CustomerReviews from "./components/CustomerReviews.jsx";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer.jsx";
 import Profile from './Pages/Profile.jsx';
 import AboutUs from "./components/AboutUs.jsx";
 import BookCab from "./Pages/BookCab.jsx";
 import RentCarPage from "./Pages/RentCar.jsx";
 import ShareNowPage from "./Pages/ShareNow.jsx";
 import TravelPollsPage from "./Pages/TravelPoll.jsx";
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Login from './components/Login.jsx';
+import Signup from './components/Signup.jsx';
 import FeedbackForm from './components/FeedbackForm.jsx';
 import ContactUs from './components/ContactUs.jsx';
 

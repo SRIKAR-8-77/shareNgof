@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
-import SearchPanel from "../components/SearchPanel";
-import MapView from "../components/MapView";
-import { SourceContext } from "../context/SourceContext";
-import { DestinationContext } from "../context/DestinationContext";
+import SearchPanel from "../components/SearchPanel.jsx";
+import MapView from "../components/MapView.jsx";
+import { SourceContext } from "../context/SourceContext.jsx";
+import { DestinationContext } from "../context/DestinationContext.jsx";
 import { useJsApiLoader } from "@react-google-maps/api";
 
 const libraries = ['places'];

@@ -1,9 +1,9 @@
 "use client"
 import React, {useContext, useEffect} from 'react'
-import LocationInput from './LocationInput'
-import { SourceContext } from '../context/SourceContext';
-import { DestinationContext } from '../context/DestinationContext';
-import CarListOptions from './CarListOptions';
+import LocationInput from './LocationInput.jsx'
+import { SourceContext } from '../context/SourceContext.jsx';
+import { DestinationContext } from '../context/DestinationContext.jsx';
+import CarListOptions from './CarListOptions.jsx';
 import { useState } from 'react';
 
 

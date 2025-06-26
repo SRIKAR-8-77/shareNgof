@@ -1,5 +1,5 @@
 import React from 'react'
-import { CarListData } from '../utils/CarListData'
+import { CarListData } from '../utils/CarListData.jsx'
 import { FaUserAlt } from "react-icons/fa";
 function CarListItem({car,distance}) {
   return (

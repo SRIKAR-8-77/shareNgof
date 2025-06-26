@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import carGif from '../assets/images/car-rent.gif';
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/AuthContext.jsx";
 
 // Logo imports...
 import avisLogo from '../assets/images/logos/avis.png';

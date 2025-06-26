@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-import CarListItem from './CarListItem';
-import { CarListData } from '../utils/CarListData';
+import CarListItem from './CarListItem.jsx';
+import { CarListData } from '../utils/CarListData.jsx';
 
 function CarListOptions({distance}) {
   const [activeIndex,setActiveIndex]=useState();
