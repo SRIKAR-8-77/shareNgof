@@ -13,7 +13,7 @@ import Hero from "./components/Hero.jsx";
 import ServicesSection from "./components/ServicesSection.jsx";
 import CustomerReviews from "./components/CustomerReviews.jsx";
 import Footer from "./components/Footer";
-import Profile from './pages/Profile.jsx';
+import Profile from './Pages/Profile.jsx';
 import AboutUs from "./components/AboutUs.jsx";
 import BookCab from "./Pages/BookCab.jsx";
 import RentCarPage from "./Pages/RentCar.jsx";
